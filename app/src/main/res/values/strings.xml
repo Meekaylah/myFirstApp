@@ -2,4 +2,21 @@
     <string name="app_name">My First App</string>
     <string name="edit_message">Enter a message</string>
     <string name="button_send">Send</string>
+    <string name="radio_yes">Yes</string>
+    <string name="radio_no">No</string>
+    <string name="text_for_radio">Do you want to add a password?</string>
+    <string name="pass_hint">Enter a password</string>
+    <string name="show_pass">Show password</string>
+    <string name="text_for_spinner">What is your gender?</string>
+    <string name="text_for_switch">Allow Notifications?</string>
+    <string-array name="gender_array">
+        <item>Female</item>
+        <item>Male</item>
+    </string-array>
+    <string name="message">Message:</string>
+    <string name="pass_radio">Password available?</string>
+    <string name="pass">Password: </string>
+    <string name="show">Showing Password?</string>
+    <string name="gender">Gender:</string>
+    <string name="notifications">Notifications?</string>
 </resources>

@@ -26,9 +26,26 @@ public class DisplayMessageActivity extends AppCompatActivity {
         // Get the Intent that started this activity and extract the string
         Intent intent = getIntent();
         String message = intent.getStringExtra(MainActivity.EXTRA_MESSAGE);
+        String pass_radio = intent.getStringExtra("radioValue");
+        String pass = intent.getStringExtra("passValue");
+        String show = intent.getStringExtra("checkValue");
+        String gender = intent.getStringExtra("spinValue");
+        String notifications = intent.getStringExtra("switchValue");
+
 
         // Capture the layout's TextView and set the string as its text
-        TextView textView = findViewById(R.id.textView);
+        TextView textView = findViewById(R.id.textViewMessage);
+        TextView radioText = findViewById(R.id.textViewPassRadio);
+        TextView passText = findViewById(R.id.textViewPass);
+        TextView showText = findViewById(R.id.textViewShow);
+        TextView genText = findViewById(R.id.textViewGender);
+        TextView notText = findViewById(R.id.textViewNot);
+
         textView.setText(message);
+        radioText.setText(pass_radio);
+        showText.setText(show);
+        genText.setText(gender);
+        notText.setText(notifications);
+        passText.setText(pass);
     }
 }
